@@ -1,0 +1,6 @@
+@use "../global" as *;
+.hero__section {
+    background: url(../../images/banner.png);
+    height: 90vh;
+    @include font__style;
+}
