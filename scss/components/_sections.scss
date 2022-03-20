@@ -1,0 +1,30 @@
+@use "../global/" as *;
+
+.languages {
+    text-align: center;
+    
+    & .container {
+
+        & figure {
+           margin: 1rem;
+
+           @include breakpoint-up(sm) {
+                margin:2rem 4rem;
+            }
+        }
+
+        
+    }
+}
+
+.about {
+    text-align: center;
+    color: $primary-color;
+    background-color: $orange;
+
+    & .container {
+        & .wrapper {
+            width: 45%;
+        }
+    }
+}

@@ -8,60 +8,96 @@
     <meta name="robots" content="index,follow">
     <meta name="description" content="This is the website for Bless Kpontsu, a freelance web developer">
     <meta name="keywords" content="Web Developer, Php, Javascript, Laravel, Vue Js, Freelance Developer, Wordpress, Content Management, UI/UX, Ghana">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <div class="hero__section">
-        <div class="hero__text">
+    <div class="open hero__section flex-column  flex-jc-sb flex-jc-c flex-ai-c">
+        <div class=" open hero__section__hero__box">
             <h1>Hi! I'm Blessing.</h1>
             <p>A Forex Trader who loves building and maintaining websites and web applications to give you a seamless user experience.</p>
         </div>
+        <img src="dist/images/bless.jpg" alt="">
     </div>
-    <header class="flex">
-        <nav class="flex">
-            <div class="nav__logo">
-               <h2>BK</h2> 
-            </div>
-            <div class="nav__links">
+
+    </div>
+    <header class="header">
+        <nav class="header__nav flex flex-jc-sb flex-ai-c">
+            <a href="#">
+                <img class="header__nav__logo" src="dist/images/logo.png" alt="Logo">
+            </a>
+            <a id="btnHamburger" class="header__nav__hamburger hide-for-desktop" href="#nav-scroll">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="header__nav__links hide-for-mobile">
                 <a href="#">About Bless</a>
                 <a href="#">Testimonials</a>
                 <a href="#">Portfolio</a>
                 <a href="#">Contact Bless</a>
             </div>
         </nav>
+        <div class="open overlay"></div>
+        <div class="header__mobile-navigation">
+            <a href="#">About Bless</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact Bless</a>
+        </div>
     </header>
     <main>
-        <section class="about">
-            <div class="container">
-                <h2>Languages I speak</h2>
+        <section class="languages">
+            <h2>Languages I speak</h2>
+            <div class="container flex-wrap flex-jc-c">
                 <figure>
-                    <img src="images/html1.png" alt="HTML Logo">
+                    <img src="/dist/images/html1.png" alt="HTML Logo">
                     <figcaption>HTML</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/css1.png" alt="CSS Logo">
+                    <img src="dist/images/css1.png" alt="CSS Logo">
                     <figcaption>CSS</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/js1.png" alt="Javascript Logo">
+                    <img src="dist/images/js1.png" alt="Javascript Logo">
                     <figcaption>JAVASCRIPT</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/php1.png" alt="Php Logo">
+                    <img src="dist/images/php1.png" alt="Php Logo">
                     <figcaption>PHP</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/nodejs.png" alt="nodejs Logo">
+                    <img src="dist/images/nodejs.png" alt="nodejs Logo">
                     <figcaption>NODEJS</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/react.png" alt="React Logo">
+                    <img src="dist/images/react.png" alt="React Logo">
                     <figcaption>REACT</figcaption>
                 </figure>
             </div>
         </section>
 
-        section.
+        <section class="about">
+            <h2>What I do</h2>
+            <div class="container flex-wrap flex-jc-c">
+                <div class="wrapper">
+                    <figure>
+                        <img src="dist/images/web-design1.png" alt="UI logo" srcset="">
+                        <figcaption>UI/UX</figcaption>
+                    </figure>
+                    <p>I believe contents should be simple in structure, having clean design patterns and thoughtful interactions. I create designs with user focus.</p>
+                </div>
+                <div class="wrapper">
+                    <figure>
+                        <img src="dist/images/web-development1.png" alt="UI logo" srcset="">
+                        <figcaption>Web Development</figcaption>
+                    </figure>
+                    <p>I delight in coding from scratch and developing contents based of client's requirements. I believe websites must work accross all devices and must be fast</p>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <script src="dist/js/main.js"></script>
 </body>
 </html>

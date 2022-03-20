@@ -1,0 +1,99 @@
+$transition-300: 300ms ease-in-out;
+$transform-origin: 3px 1px;
+
+@keyframes fade-in {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    1% {
+       visibility: visible;
+        opacity: 0;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fade-in $transition-300 forwards;
+}
+
+
+@keyframes fade-out {
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    99% {
+       visibility: visible;
+        opacity: 0;
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+
+
+.fade-out {
+    animation: fade-out $transition-300 forwards;
+}
+
+@keyframes show-navigation {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        margin: 0;
+        transform: translateX(-95%);
+    }
+
+    1% {
+        height: 100%;
+        margin: 5%;
+        visibility: visible;
+        opacity: 0;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+        height: 100%;
+        margin: 5%;
+        transform: translateX(105%);
+    }
+}
+
+.show-navigation {
+    animation: show-navigation $transition-300 forwards;
+}
+
+@keyframes hide-navigation {
+    from {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(105%);
+    }
+
+    99% {
+        visibility: visible;
+        opacity: 0;
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(-95%);
+    }
+}
+
+.hide-navigation {
+    animation: hide-navigation $transition-300 forwards;
+}

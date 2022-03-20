@@ -1,4 +1,8 @@
 @use "colors" as *;
+@use "mixins" as *;
+@use "fonts" as *;
+
+//Resets
 html {
     font-size: 100%;
     box-sizing: border-box;
@@ -11,8 +15,97 @@ html {
 body{
     margin: 0;
     padding: 0;
+    color: $grayishBlue;
+    
+}
+
+//links
+
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+
+//flexBox
+
+@mixin flex($wrap, $direction) {
+    display: flex;
+    flex-wrap: $wrap;
+    flex-direction: $direction
 }
 
 .flex {
-    display: flex;
+    @include flex("","");
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
 }
+
+.flex-wrap {
+    @include flex(wrap,"")
+}
+
+
+//column flex 
+.flex-column {
+    @include flex("",column)
+}
+
+//visibility for breakpoints
+
+//desktop
+.hide-for-desktop  {
+    @include breakpoint-up(sm) {
+        display: none;
+    }
+}
+
+//mobile
+.hide-for-mobile  {
+   @include breakpoint-down(xm) {
+       display: none;
+   }
+}
+
+//flex row for Desktop
+.flex-r-lg {
+    @include breakpoint-up(md) {
+        flex-direction: row;
+    }
+}
+
+section {
+    padding: 3rem 0.1rem;
+    font-size: $font-md;
+
+    & h2 {
+        font-size: $font-xl;
+        text-transform: uppercase;
+        
+    }
+
+}
+
+.container {
+    @include breakpoint-up(md) {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    margin-top: 3rem;
+
+    & figcaption {
+        font-size: $font-lg;
+        font-weight: 500;
+    }
+
+}
+
+
