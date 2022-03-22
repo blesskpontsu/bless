@@ -2,7 +2,6 @@
 .hero__section {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../../dist/images/banner.png);
     height: 90vh;
-    @include font__style;
     color: $primary-color;
 
     &__hero__box {
@@ -32,10 +31,6 @@
                 font-size: 1.5rem;
             }
         }
-    }
-    & img {
-        width: 12rem;
-        border-radius: 50%;
     }
 }
 

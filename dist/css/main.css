@@ -12,6 +12,9 @@ body {
   margin: 0;
   padding: 0;
   color: #434550;
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 
 a, a:visited, a:hover {
@@ -84,6 +87,16 @@ section h2 {
 .container figcaption {
   font-size: 1.25rem;
   font-weight: 500;
+}
+
+.img-rounded {
+  width: 12rem;
+  border-radius: 50%;
+}
+
+.text-center {
+  text-align: center;
+  margin: auto;
 }
 
 @keyframes fade-in {
@@ -171,9 +184,6 @@ section h2 {
 .hero__section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../dist/images/banner.png);
   height: 90vh;
-  font-family: "Public Sans", sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400;
   color: #fff;
 }
 .hero__section__hero__box {
@@ -204,10 +214,6 @@ section h2 {
   .hero__section__hero__box p {
     font-size: 1.5rem;
   }
-}
-.hero__section img {
-  width: 12rem;
-  border-radius: 50%;
 }
 
 .header.has-open .header__nav__hamburger > span:first-child {
@@ -312,8 +318,20 @@ section h2 {
   color: #fff;
   background-color: #b36206;
 }
-.about .container .wrapper {
-  width: 45%;
+.about img {
+  width: 12rem;
+}
+@media only screen and (min-width: 48em) {
+  .about .container .wrapper {
+    width: 45%;
+  }
+}
+
+.testimonials {
+  color: #000;
+}
+.testimonials img {
+  width: 15rem;
 }
 
 /*# sourceMappingURL=main.css.map */

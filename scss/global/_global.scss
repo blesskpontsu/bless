@@ -16,6 +16,7 @@ body{
     margin: 0;
     padding: 0;
     color: $grayishBlue;
+    @include font__style;
     
 }
 
@@ -106,6 +107,16 @@ section {
         font-weight: 500;
     }
 
+}
+
+.img-rounded {
+    width: 12rem;
+    border-radius: 50%;
+}
+
+.text-center {
+    text-align: center;
+    margin: auto;
 }
 
 

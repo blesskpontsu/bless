@@ -22,9 +22,24 @@
     color: $primary-color;
     background-color: $orange;
 
-    & .container {
-        & .wrapper {
-            width: 45%;
+    & img {
+        width: 12rem;
+    }
+
+    @include breakpoint-up(sm) {
+         .container {
+            & .wrapper {
+                width: 45%;
+            }
         }
+    }
+}
+
+
+.testimonials {
+    color: $secondary-color;
+
+    & img {
+        width: 15rem;
     }
 }
